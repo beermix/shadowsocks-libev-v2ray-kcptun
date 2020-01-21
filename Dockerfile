@@ -1,10 +1,9 @@
 
-FROM ubuntu:18.04
-LABEL maintainer="Shawnzhai <shawn.zhai@gmail.com>"
+FROM ubuntu:19.10
 
-ENV SS_VERSION=3.3.1 \
-KCP_VERSION=20190905 \
-GO_VERSION=1.13 
+ENV SS_VERSION=3.3.4 \
+KCP_VERSION=20200103 \
+GO_VERSION=1.13.6
 
 ENV SS_URL=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v${SS_VERSION}/shadowsocks-libev-${SS_VERSION}.tar.gz \
 KCP_URL=https://github.com/xtaci/kcptun/releases/download/v${KCP_VERSION}/kcptun-linux-amd64-${KCP_VERSION}.tar.gz \
@@ -14,7 +13,7 @@ V2RAY_URL=https://github.com/shadowsocks/v2ray-plugin.git
 ENV SERVER_ADDR=0.0.0.0 \
 SERVER_PORT=2222 \
 LOCAL_PORT=1080 \
-PASSWORD=examplepwd \
+PASSWORD=ASDewq123 \
 METHOD=chacha20-ietf-poly1305 \
 TIMEOUT=60 \
 FASTOPEN=--fast-open \
@@ -23,7 +22,7 @@ PLUGIN=v2ray-plugin \
 PLUGIN_OPTS=server \
 ARGS='' \
 KCP_LISTEN=3333 \
-KCP_PASS=examplepwd \
+KCP_PASS=ASDewq123 \
 KCP_ENCRYPT=salsa20 \
 KCP_MODE=fast2 \
 KCP_MTU=1350 \
